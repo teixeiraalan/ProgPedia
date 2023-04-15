@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+   background-color: #202020; 
+}
+
+li{
+    list-style: none;
+}
+
+/*HEADER*/
+
+.navegacao{
+    background-color: #202020;
+    height: 130px;
+    margin-top: -2%;
+}
+
+.content{
+    height: 847px;
+    background-color: #202020
+}
+
+.card{
+    height: 600px;
+    width: 500px;
+    background-color: #f31f26;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-top: -40%;
+    margin-left: 60%;
+    position: absolute;
+}
+
+.card-sombra{
+    height: 600px;
+    width: 500px;
+    background-color: #4d4d4d;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-top: -39%;
+    margin-left: 61%;
+}
+
+#title{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 1.5%;
+    font-size: 25pt;
+}
+
+#title-2{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 1.5%;
+    font-size: 12pt;
+    opacity: 85%;
+}
+
+#img-inicio{
+    margin-top: -30.5%;
+    margin-left: -0.5%;
+    width: 504px;
+    border-radius: 20px;
+}
+
+#txt-card{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23pt;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+#txt-content{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+    margin-top: 10%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+/* Botão com efeito hover degradê modificável */
+
+.btn-gradient {
+
+    width: auto;
+    font-size: 1em;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    background: #313131;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 18%;
+    margin-left: 15%;
+}
+
+.btn-gradient::before {
+ 
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(124deg, #f31, #f31f26);
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(3px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.btn-gradient:hover::before { opacity: 1; }
+
+.btn-gradient::after {
+
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #242424;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+
+}
+
+@keyframes move {
+
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+
+}
+
+/* Cards com os cursos disponíveis */
+
+.corpo{
+    border: 2px solid transparent;
+    height: 250px;
+    width: 200px;
+    padding: 5px;
+    float: left;
+    margin: 1.5%;
+    background-color: rgb(46, 46, 46);
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 74%;
+}
+
+.corpo:hover{
+    border: 2px solid #6b6b6b;
+    transition: 0.3s all;
+}
+
+#conteudo{
+    position: relative;
+    display: block;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#title-conteudo{
+    color: white;
+    font-size: 22pt;
+    margin-left: 2%;
+    font-family: 'Poppins', sans-serif;
+}
