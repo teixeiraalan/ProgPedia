@@ -16,6 +16,92 @@ li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* NAV */
+
+#lista-nav{
+    display: flex;
+    margin-left: 1%;
+    margin-top: -1%;
+}
+
+/* PADDING ENTRE OS BOTÕES DA LISTA */
+
+#li-nav{
+    padding: 5px;
+}
+
+/* BOTÃO COM EFEITO HOVER {BOTÕES PARA NAVEGAÇÃO} */
+
+.btn-gradient-nav {
+
+    width: auto;
+    font-size: 1em;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background: #313131;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-gradient-nav::before {
+ 
+  position: absolute;   
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(124deg, #f31, #f31f26);
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(3px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.btn-gradient-nav:hover::before { opacity: 1; }
+
+.btn-gradient-nav::after {
+
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #242424;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+
+}
+
+@keyframes move {
+
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+
+}
+
 /*HEADER*/
 
 .navegacao{
@@ -32,7 +118,7 @@ li{
 .card{
     height: 600px;
     width: 500px;
-    background-color: #f31f26;
+    background: linear-gradient(rgb(240, 67, 36), #ff0008);
     border: 2px solid transparent;
     border-radius: 20px;
     margin-top: -40%;
@@ -93,7 +179,9 @@ li{
     position: absolute;
 }
 
-/* Botão com efeito hover degradê modificável */
+
+/* BOTÃO COM EFEITO HOVER */
+
 
 .btn-gradient {
 
@@ -164,7 +252,7 @@ li{
 
 }
 
-/* Cards com os cursos disponíveis */
+/* CARDS COM OS CURSOS DISPONÍVEIS OU PRINCIPAIS */
 
 .corpo{
     border: 2px solid transparent;
@@ -180,7 +268,7 @@ li{
 }
 
 .corpo:hover{
-    border: 2px solid #6b6b6b;
+    border: 2px solid rgba(255, 53, 17, 0.685);
     transition: 0.3s all;
 }
 
