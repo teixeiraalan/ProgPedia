@@ -21,12 +21,22 @@
                     <a href="#" class="btn-gradient-nav">Início</a>
                 </li>
                 <li id="li-nav">
-                    <a href="#" class="btn-gradient-nav">Categorias</a>
+                    <a href="#" class="btn-gradient-nav" onclick="Modal('modal')">Categorias</a>
                 </li>
                 <li id="li-nav">
                     <a href="#" class="btn-gradient-nav">Cadastro / Login</a>
                 </li>
             </ul>
+            <div id="modal" style="display: block;">
+                <div id="bloco">
+                    <ul id="lista-modal">
+                        <li><a href="#" id="link-modal">Front End</a></li>
+                        <li><a href="#" id="link-modal">Back End</a></li>
+                        <li><a href="#" id="link-modal">Full Stack</a></li>
+                        <li><a href="#" id="link-modal">UI/UX</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="content">
             <h1 id="txt-content"><span style="color: #8d1ff3;"> Se interessou?! </span><span style="color: rgb(90, 19, 255); text-decoration: underline;">Cadastre-se agora </span>  <br> e confira todos os nossos <br> cursos disponíveis.</h1>
@@ -43,37 +53,29 @@
     <article>
         <div id="conteudo">
             <h2 id="title-conteudo">Nossos cursos:</h2>
+            <h3 id="info-conteudo">*Conteúdos disponíveis no momento.</h3>
             <div  style="margin: auto;">
                 <ol>
                     <a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="" >
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
+                        <li class="corpo"><img src="componentes/icons/html-5.png" alt="" id="icons"><b class="txt-cards" style="margin-top: 10%; margin-left: -5.5%; font-size: 25px; position: absolute;">HTML 5</b></li>
                     </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="" >
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
+                        <li class="corpo"><img src="componentes/icons/css-3.png" alt="" id="icons"><b class="txt-cards" style="margin-top: 10%; margin-left: -5.5%; font-size: 25px; position: absolute;">CSS 3</b></li>
                     </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
+                        <li class="corpo"><img src="componentes/icons/js.png" alt="" id="icons"><b class="txt-cards" style="margin-top: 10%; margin-left: -7.3%; font-size: 25px; position: absolute;">JavaScript</b></li>
                     </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"> <b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
+                        <li class="corpo"><img src="componentes/icons/python.png" alt="" id="icons"><b class="txt-cards" style="margin-top: 10%; margin-left: -5.5%; font-size: 25px; position: absolute;">Python</b></li>
                     </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"> <b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="" >
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"><b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"> <b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
-                    </a><a href="">
-                        <li class="corpo"><img src="#" alt="" id="html"> <b style="margin-top: 2%; margin-left: 3%; font-size: 30px; position: absolute;"></b></li>
+                        <li class="corpo"><img src="componentes/icons/react.png" alt="" id="icons"><b class="txt-cards" style="margin-top: 10%; margin-left: -5.1%; font-size: 25px; position: absolute;">React </b></li>
                     </a>
                 </ol>
             </div>
         </div>
     </article>
+    <footer>
+        <div>
+            <a href="https://www.github.com/teixeiraalan" id="by-footer" target="_blank"">By Alan - 2023.</a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

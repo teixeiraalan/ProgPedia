@@ -76,7 +76,7 @@ a{
   height: calc(100% + 4px);
   left: -2px;
   top: -2px;
-  background: linear-gradient(124deg, #a200ff, #0400ff);
+  background: linear-gradient(124deg, #7700ff, #7700ff);
   background-size: 400%;
   z-index: -1;
   filter: blur(3px);
@@ -115,6 +115,41 @@ a{
     background-position: 0 0;
   }
 
+}
+
+/* MODAL */
+
+#modal{
+
+}
+
+#bloco{
+  width: 110px;
+  height: 200px;
+  background-color: #292929;
+  position: absolute;
+  margin-left: 44.3%;
+  margin-top: 0.2%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+#lista-modal{
+
+}
+
+#link-modal{
+  color: white;
+  padding: 3px;
+  font-family: "Poppins";
+  margin-left: 15%;
+  margin-top: 1%;
+  font-size: 12pt;
+}
+
+#link-modal:hover{
+  text-decoration: underline;
+  transition: 0.5s all;
 }
 
 /*HEADER*/
@@ -226,7 +261,7 @@ a{
   height: calc(100% + 4px);
   left: -2px;
   top: -2px;
-  background: linear-gradient(124deg, #a200ff, #0400ff);
+  background: linear-gradient(124deg, #7700ff, #7700ff);
   background-size: 400%;
   z-index: -1;
   filter: blur(3px);
@@ -284,7 +319,7 @@ a{
 }
 
 .corpo:hover{
-    border: 2px solid #6f00ff;
+    border: 2px solid #7700ff;
     transition: 0.3s all;
 }
 
@@ -302,3 +337,36 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 
+#info-conteudo{
+  color: white;
+  font-family: 'Poppins';
+  font-size: 10pt;
+  margin-left: 1.7%;
+  opacity: 30%;
+}
+
+#icons {
+  width: 100px;
+  margin-top: 15%;
+  margin-left: 25%;
+}
+
+.txt-cards{
+  font-family: "Monocraft";
+}
+
+/* FOOTER */
+
+footer{
+  margin-top: 45%;
+}
+
+#by-footer{
+  color: white;
+  font-size: 10pt;
+  font-family: "Monocraft";
+  margin-top: -1%;
+  margin-left: 45%;
+  opacity: 30%;
+  position: absolute;
+}
