@@ -128,7 +128,7 @@ a{
   height: 200px;
   background-color: #292929;
   position: absolute;
-  margin-left: 44.3%;
+  margin-left: 44.8%;
   margin-top: 0.2%;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -149,7 +149,8 @@ a{
 
 #link-modal:hover{
   text-decoration: underline;
-  transition: 0.5s all;
+  transition: 0.2s all;
+  color: #a200ff;
 }
 
 /*HEADER*/
@@ -366,7 +367,7 @@ footer{
   font-size: 10pt;
   font-family: "Monocraft";
   margin-top: -1%;
-  margin-left: 45%;
+  margin-left: 50%;
   opacity: 30%;
   position: absolute;
 }
