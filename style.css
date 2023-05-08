@@ -250,7 +250,7 @@ a{
     position: absolute;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    margin-top: 21%;
+    margin-top: 28%;
     margin-left: 20%;
 }
 
@@ -312,7 +312,7 @@ a{
     padding: 5px;
     float: left;
     margin: 1.5%;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(41, 41, 41);
     color: #ffffff;
     font-size: 20px;
     opacity: 74%;
@@ -322,6 +322,7 @@ a{
 .corpo:hover{
     border: 2px solid #7700ff;
     transition: 0.3s all;
+    color: #7700ff;
 }
 
 #conteudo{
