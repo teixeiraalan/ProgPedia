@@ -25,6 +25,8 @@
 
 body{
    background-color: #202020; 
+   color: white;
+   font-family: Poppins;
 }
 
 li{
@@ -39,8 +41,8 @@ a{
 
 #lista-nav{
     display: flex;
-    margin-left: 40%;
-    margin-top: -4%;
+    margin-left: 1.1%;
+    margin-top: -1.6%;
 }
 
 /* PADDING ENTRE OS BOTÕES DA LISTA */
@@ -200,7 +202,7 @@ a{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     position: absolute;
-    margin-top: -3%;
+    margin-top: -2.8%;
     margin-left: 1.5%;
     font-size: 12pt;
     opacity: 85%;
@@ -250,8 +252,8 @@ a{
     position: absolute;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    margin-top: 28%;
-    margin-left: 20%;
+    margin-top: 23%;
+    margin-left: 23%;
 }
 
 .btn-gradient::before {
@@ -357,18 +359,41 @@ a{
   font-family: "Monocraft";
 }
 
-/* FOOTER */
-
-footer{
-  margin-top: 45%;
+#txtcontent2{
+  margin-top: 14%;
+  margin-left: 5.5%;
+  font-size: 18pt;
+  position: absolute;
 }
 
-#by-footer{
-  color: white;
-  font-size: 10pt;
-  font-family: "Monocraft";
-  margin-top: -1%;
-  margin-left: 50%;
-  opacity: 30%;
+.btn-conteudo {
+
+  width: auto;
+  font-size: 15pt;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  background: #313131;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
   position: absolute;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 23%;
+  margin-left: 23%;
+}
+
+.tooltip-container{
+  padding: 100px;
+  color: white;
+}
+
+#div-content{
+  position: absolute;
+  display: flex;
+  margin-top: 18%;
+  margin-left: 30%;
 }
