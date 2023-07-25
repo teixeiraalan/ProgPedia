@@ -255,7 +255,7 @@ a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     margin-top: 23%;
-    margin-left: 23%;
+    margin-left: 19.5%;
 }
 
 .btn-gradient::before {
@@ -377,7 +377,7 @@ footer{
 }
 
 .corpo{
-  border: 1px solid #6f00ff;
+  border: 1px solid transparent;
   height: 400px;
   width: 250px;
   padding: 5px;
@@ -385,12 +385,11 @@ footer{
   margin: 1.5%;
   color: #ffffff;
   background-color: #292929;
-  opacity: 74%;
   border-radius: 10px;
 }
 
 .corpo:hover{
-  border: 1px solid #6f00ff;
+  border: 1px solid transparent;
   cursor: default;
 }
 
@@ -405,4 +404,59 @@ h5{
   margin-top: 10%;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+
+h3{
+  text-align: justify;
+}
+
+main{
+  background-color: white;
+  color: #292929;
+}
+
+footer{
+  background-color: #202020;
+}
+
+#img-01{
+  margin-left: -72%;
+  margin-top: -6%;
+}
+
+#img-02{
+  margin-left: -50%;
+  margin-top: -5.5%;
+}
+
+#img-03{
+  width: 7%;
+  margin-top: 8.5%;
+  margin-left: -14.4%;
+}
+
+header{
+  height: 850px;
+}
+
+.corpo01{
+  border: 1px solid transparent;
+  height: 400px;
+  width: 250px;
+  padding: 5px;
+  float: left;
+  margin: 1.5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  color: #202020;
+  cursor: pointer;
+}
+
+img{
+  cursor: pointer;
 }
