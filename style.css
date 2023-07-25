@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 /* Scrollbar personalizada. */
 ::-webkit-scrollbar{
   width: 10px;
@@ -305,35 +307,6 @@ a{
 
 }
 
-/* CARDS COM OS CURSOS DISPONÍVEIS OU PRINCIPAIS */
-
-.corpo{
-    border: 2px solid transparent;
-    height: 250px;
-    width: 200px;
-    padding: 5px;
-    float: left;
-    margin: 1.5%;
-    background-color: rgb(41, 41, 41);
-    color: #ffffff;
-    font-size: 20px;
-    opacity: 74%;
-    border-radius: 10px;
-}
-
-.corpo:hover{
-    border: 2px solid #7700ff;
-    transition: 0.3s all;
-    color: #7700ff;
-}
-
-#conteudo{
-    position: relative;
-    display: block;
-    margin-top: 15%;
-    margin-left: 5%;
-}
-
 #title-conteudo{
     color: white;
     font-size: 22pt;
@@ -396,4 +369,40 @@ a{
   display: flex;
   margin-top: 18%;
   margin-left: 30%;
+}
+
+/* FOOTER */
+footer{
+  
+}
+
+.corpo{
+  border: 1px solid #6f00ff;
+  height: 400px;
+  width: 250px;
+  padding: 5px;
+  float: left;
+  margin: 1.5%;
+  color: #ffffff;
+  background-color: #292929;
+  opacity: 74%;
+  border-radius: 10px;
+}
+
+.corpo:hover{
+  border: 1px solid #6f00ff;
+  cursor: default;
+}
+
+#conteudo{
+  position: relative;
+  display: block;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+h5{
+  margin-top: 10%;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
