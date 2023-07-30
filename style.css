@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
@@ -11,12 +11,12 @@
 
 ::-webkit-scrollbar-track{
   background: #292929;
-  border-radius: 30px;
+  border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb{
   background: #6f00ff;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 
 *{
@@ -40,6 +40,11 @@ a{
 }
 
 /* NAV */
+
+nav{
+  margin-left: 1%;
+  margin-top: 1%;
+}
 
 #lista-nav{
     display: flex;
@@ -173,7 +178,7 @@ a{
 .card{
     height: 600px;
     width: 500px;
-    background: linear-gradient(rgb(80, 36, 240), #a200ff);
+    background: linear-gradient(to right,rgb(80, 36, 240), #a200ff);
     border: 2px solid transparent;
     border-radius: 20px;
     margin-top: -40%;
@@ -225,14 +230,32 @@ a{
     margin-left: 1%;
 }
 
-#txt-content{
-    color: white;
+.titulo-principal{
+    color: #6f00ff;
     font-family: 'Poppins', sans-serif;
-    font-size: 30pt;
+    font-size: 35pt;
     margin-top: 10%;
     margin-left: 5%;
     position: absolute;
 }
+
+
+.titulo-principal:after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+ }
+ /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+ 
+ @keyframes pisca{
+     0%, 100%{
+         opacity: 1;
+     }
+     50%{
+         opacity: 0;
+     }
+ }
 
 
 /* BOTÃO COM EFEITO HOVER */
@@ -377,22 +400,19 @@ footer{
 }
 
 .corpo{
-  border: 1px solid transparent;
+  border: 2px solid white;
   height: 300px;
   width: 200px;
   padding: 5px;
   float: left;
   margin: 1.5%;
   font-size: 10px;
-  color: #ffffff;
-  background-color: #292929;
-  border-radius: 10px;
-}
-
-.corpo:hover{
-  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: default;
 }
+
 
 #conteudo{
   position: relative;
@@ -425,8 +445,8 @@ footer{
 #cards-info{
   color: white;
   background-color: #292929;
-  height:200px;
-  width: 150px;
+  height:300px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -435,6 +455,25 @@ footer{
 }
 
 #cards-info:hover{
+  border-color: #6f00ff;
+  transition: 0.3s all;
+  text-decoration: underline;
+}
+
+#cards-info2{
+  color: white;
+  background-color: #292929;
+  height:50px;
+  width: 650px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+#cards-info2:hover{
   border-color: #6f00ff;
   transition: 0.3s all;
   text-decoration: underline;
@@ -471,4 +510,34 @@ img{
   padding: 25px;
 
   margin-top: 10px;
+}
+
+#fechar-modal:hover{
+  color: red;
+  transition: 0.3s all;
+}
+
+.pre{
+  animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #6f00ff;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.box-load{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
 }

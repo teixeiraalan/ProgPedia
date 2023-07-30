@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="componentes/favicon/favicon.png" type="image/x-icon">
     <title>ProgPedia - Versão Beta</title>
 </head>
-<body>
+<body onload="loading()">
+    <div class="box-load">
+        <div class="pre"></div>
+    </div>
     <div id="voltar">
         <a href="index.html#footer" class="btn-gradient" style="margin-top: -8%; margin-left: 1%; position: absolute;"><</a>
     </div>
@@ -17,10 +20,61 @@
                 <h1 style="color: #8d1ff3; margin-top: 5%; margin-left: 24%; position: absolute;">Bem-vindo ao Guia de Estudos Back-End: Python, Ruby e PHP!</h1>
                 <p style="color: white; margin-top: 8%; margin-left: 28%; position: absolute; text-align: center;" >Neste guia, exploraremos três das linguagens de programação mais populares para o desenvolvimento back-end: <br> Python, Ruby e PHP. Como desenvolvedor back-end, você será responsável por criar e gerenciar a lógica <br> do servidor, o banco de dados e a comunicação entre o front-end e o banco de dados. Cada <br> linguagem tem suas próprias características e vantagens, e vamos mergulhar nas <br> particularidades de cada uma delas.<br><span style="text-decoration: underline;"> Selecione uma das três opções abaixo para começar:</span></p>
                 <div id="div-content" style="margin-left: 34%;">
-                    <ul style="display: block;">
-                        <li style="padding: 5px;"><a href="pag002.html" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/video.png" alt=""> Vídeos</a></li>
-                        <li style="padding: 5px;"><a href="" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/livro.png" alt=""> Livros</a></li>
-                        <li style="padding: 5px;"><a href="" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/site.png" alt=""> Referências</a></li>
+                    <ul>
+                        <div onclick="mostrar()" id="cards-info2">
+                            <img src="componentes/icons/video.png" alt="">Vídeos
+                        </div>
+                        <div class="modal" style="display: none;">
+                            <h3 onclick="fechar()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">Curso em Vídeo</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                        </div>
+                        <div onclick="mostrar0()" id="cards-info2">
+                            <img src="componentes/icons/livro.png" alt="">Livros
+                        </div>
+                        <div class="segundo" style="display: none;">
+                            <h3 onclick="fechar0()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">Curso em Vídeo</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                        </div>
+                        <div onclick="mostrar1()" id="cards-info2">
+                            <img src="componentes/icons/site.png" alt="">Sites
+                        </div>
+                        <div class="terceiro" style="display: none;">
+                            <h3 onclick="fechar1()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">Curso em Vídeo</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="">2</a>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -28,5 +82,6 @@
         <div id="conteudo" style="position: absolute; margin-top: 15%; margin-left: 29.5%;">
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

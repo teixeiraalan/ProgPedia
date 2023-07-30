@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="componentes/favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="componentes/favicon/logotipo.png" type="image/x-icon">
     <title>ProgPedia - Versão Beta</title>
 </head>
-<body>
+<body onload="loading()">
+    <div class="box-load">
+        <div class="pre"></div>
+    </div>
     <div id="voltar">
         <a href="index.html#footer" class="btn-gradient" style="margin-top: -8%; margin-left: 1%; position: absolute;"><</a>
     </div>
@@ -18,10 +21,76 @@
                 <p style="color: white; margin-top: 8%; margin-left: 28%; position: absolute; text-align: center;" >
                 Este guia foi criado para ajudar você a mergulhar no empolgante mundo do desenvolvimento front-end, onde  você <br> aprenderá a criar sites e aplicativos web incríveis usando as tecnologias fundamentais: HTML, CSS e JavaScript. <br> Vamos guiá-lo desde os conceitos básicos até tópicos mais avançados, capacitando-o a construir interfaces <br> interativas e responsivas. <br><span style="text-decoration: underline;"> Selecione uma das três opções abaixo para começar:</span></p>
                 <div id="div-content" style="margin-left: 34%;">
-                    <ul style="display: block;">
-                        <li style="padding: 5px;"><a href="videosfront.html" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/video.png" alt=""> Vídeos</a></li>
-                        <li style="padding: 5px;"><a href="" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/livro.png" alt=""> Livros</a></li>
-                        <li style="padding: 5px;"><a href="" id="cards-info" style="height: 50px; width: 700px;"><img src="componentes/icons/site.png" alt=""> Referências</a></li>
+                    <ul>
+                        <div onclick="mostrar()" id="cards-info2">
+                            <img src="componentes/icons/video.png" alt="">Vídeos
+                        </div>
+                        <div class="modal" style="display: none;">
+                            <h3 onclick="fechar()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&pp=iAQB" target="_blank">Curso em Vídeo - Curso completo de HTML e CSS </a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=CKiLma2EoUI&list=PLBE6R2xHB63npKH09CbnFxySTR1TEja2C&pp=iAQB" target="_blank">Curso HTML & CSS Rápido - Web Designer Brasil</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://youtube.com/playlist?list=PLnDvRpP8Bnez2LJGshXKtid2f-aUkFOqM" target="_blank">Curso HTML & CSS - Matheus Battisti</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://youtube.com/playlist?list=PLbIBj8vQhvm00J3f3rD33tRuNLem8EgEA" target="_blank">Curso HTML & CSS - Zurubabel</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://youtube.com/playlist?list=PLGgRtySq3SDMkd4UIiFeB8UEdqnm2NBRJ" target="_blank">Curso HTML & CSS - John Haste</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://youtube.com/playlist?list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c" target="_blank">Curso CSS - Programação Web</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&pp=iAQB" target="_blank">Curso em Vídeo - JavaScript e ECMAScript para Iniciantes</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=ftWXUUM5YxU&list=PLBnXXDBNZQpJKH1Fx2EAbKbG9p_dV_pKW&pp=iAQB" target="_blank">Curso completo de JavaScript - Keven Jesus</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=E4DBTqgxHGM&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T&pp=iAQB" target="_blank">JavaScript Completo e Profissional - CFB Cursos</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=TciyRM4tSEc&list=PLq3pVjLbELs5C9cdYxdo6f5s_Zu1ASvHb&pp=iAQB" target="_blank">Curso JavaScript e Processing - Marcelo Pereira</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.youtube.com/watch?v=093dIOCNeIc&list=PLQCmSnNFVYnT1-oeDOSBnt164802rkegc&pp=iAQB" target="_blank">Curso de JavaScript - Rodrigo Branas</a>
+                            </div>
+                        </div>
+                        <div onclick="mostrar0()" id="cards-info2">
+                            <img src="componentes/icons/livro.png" alt="">Livros
+                        </div>
+                        <div class="segundo" style="display: none;">
+                            <h3 onclick="fechar0()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.amazon.com.br/JavaScript-Guia-Definitivo-David-Flanagan/dp/856583719X/ref=d_pd_sbs_sccl_2_2/137-7261156-9061300?content-id=amzn1.sym.bc536bd6-e72b-44eb-9471-0bedf0517c03&pd_rd_i=856583719X&psc=1" target="_blank">JavaScript: O Guia Definitivo</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.amazon.com.br/Fundamentos-Html5-Css3-Maur%C3%ADcio-Silva/dp/8575224387/ref=pd_vtp_h_pd_vtp_h_sccl_5/137-7261156-9061300?content-id=amzn1.sym.0a6899b6-5ce2-42c3-9427-03a3a139b3f2&pd_rd_i=8575224387&psc=1" target="_blank">Fundamentos de HTML5 e CSS3</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.amazon.com.br/HTML-CSS-Design-Build-Websites/dp/1118008189/ref=d_pd_sbs_sccl_2_3/137-7261156-9061300?content-id=amzn1.sym.bc536bd6-e72b-44eb-9471-0bedf0517c03&pd_rd_i=1118008189&psc=1" target="_blank">HTML and CSS: Design and Build Websites</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.amazon.com.br/Grid-Layout-Criando-Layouts-Profissionais/dp/8575226320/ref=d_pd_sbs_sccl_2_2/137-7261156-9061300?content-id=amzn1.sym.bc536bd6-e72b-44eb-9471-0bedf0517c03&pd_rd_i=8575226320&psc=1" target="_blank">CSS Grid Layout: Criando Layouts CSS Profissionais</a>
+                            </div>
+                        </div>
+                        <div onclick="mostrar1()" id="cards-info2">
+                            <img src="componentes/icons/site.png" alt="">Sites
+                        </div>
+                        <div class="terceiro" style="display: none;">
+                            <h3 onclick="fechar1()" id="fechar-modal" style="position: absolute; margin-top: -6.5%; margin-left: 95%; cursor: pointer;">X</h3>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.devmedia.com.br/guia/programador-front-end/38792" target="_blank">DevMedia</a>
+                            </div>
+                            <div id="cards-info2">
+                                <a style="color: #fff;" href="https://www.hostgator.com.br/blog/tudo-o-que-voce-precisa-para-ser-um-programador-front-end/" target="_blank">HostGator</a>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -29,5 +98,6 @@
         <div id="conteudo" style="position: absolute; margin-top: 15%; margin-left: 29.5%;">
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
