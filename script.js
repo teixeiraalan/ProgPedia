@@ -56,3 +56,4 @@ typeWrite(titulo);
 function alerta(){
     alert('Desculpe-nos pelo inconveniente! O conteúdo que você procura está temporariamente indisponível no momento, pois estamos trabalhando diligentemente no seu desenvolvimento. Estamos ansiosos para compartilhar o resultado final com você em breve. Agradecemos sua compreensão e paciência. Fique atento às atualizações!')
 }
+
